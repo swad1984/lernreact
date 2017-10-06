@@ -1,11 +1,27 @@
 
 //const firsts = <h1>Hello!</h1>;
+var w = [
+	{
+		z: 'test z1',
+		x: 'test x1'
+	},
+	{
+		z: 'test z2',
+		x: 'test x2'
+	}
+
+];
 var App = React.createClass({
   render: function() {
-    return (
-      <div className="app">
-        Всем привет, я компонент App!
-      </div>
+    	var data = this.props.data;
+    	var tpl = data.map(function(itim, index) {
+    		return (
+    			<div key={index}>
+    				<p>{item.z}</p>
+    				<p>{item.x}</p>
+    			</div>
+    			)
+    	}
     );
   }
 });
@@ -13,9 +29,10 @@ var App = React.createClass({
 //* */
 
 var Qwerty = React.createClass({
+		
 		render: function() {
 			return (
-				<div>hjkfhsdk</div>
+				<div data={w}>hjkfhsdk</div>
 				);
 		}
 	}); 
