@@ -11,11 +11,12 @@ var w = [
 	}
 
 ];
+
 var App = React.createClass({
   render: function() {
-  		console.log(this.props.data);
-    	var data = this.props.data;
-    	var tpl = data.map(function(item, index) {
+  		//console.log(this.props.data);
+    	var date = this.props.data;
+    	var tpl = date.map(function(item, index) {
     		return (
     			<div key={index}>
     				<p>{item.z}</p>
