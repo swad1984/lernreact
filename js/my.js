@@ -1,6 +1,7 @@
 
 //const firsts = <h1>Hello!</h1>;
 
+/*
 var q = React.createClass(
 	{
 		render: function () {
@@ -10,16 +11,16 @@ var q = React.createClass(
 		}
 	}
 
-);
+); */
 
-function fr() {
+//function fr() {
 
 ReactDOM.render(
-    <q />,
-    document.getElementById('first')
+  <h1>Hello, world!</h1>,
+  document.getElementById('first')
 );
 
-}
+//}
 
 $("#first2").html('Вроде арбайтен');
 console.log(React);
