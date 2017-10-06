@@ -13,21 +13,39 @@ var w = [
 ];
 var App = React.createClass({
   render: function() {
+  		console.log(this.props.data);
     	var data = this.props.data;
-    	var tpl = data.map(function(itim, index) {
+    	var tpl = data.map(function(item, index) {
     		return (
     			<div key={index}>
     				<p>{item.z}</p>
     				<p>{item.x}</p>
     			</div>
     			)
-    	}
-    );
+    	})
+    return (
+    	<div>
+    		{tpl}
+    	</div>
+    )
+    
   }
 });
 /* */
 //* */
-
+/*
+var t = data.map(
+	function (item, index) {
+		return (
+    			<div key={index}>
+    				<p>{item.z}</p>
+    				<p>{item.x}</p>
+    			</div>
+    			)
+	}
+	); */
+/* */
+//* */
 var Qwerty = React.createClass({
 		
 		render: function() {
