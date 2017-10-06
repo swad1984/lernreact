@@ -1,10 +1,21 @@
 
 //const firsts = <h1>Hello!</h1>;
 
+var q = React.createClass(
+	{
+		render: function () {
+			return (
+				"dslfjl"
+				)
+		}
+	}
+
+);
+
 function fr() {
 
 ReactDOM.render(
-    React.createElement('h1', null, 'Привет, Мир!'),
+    <q />,
     document.getElementById('first')
 );
 
