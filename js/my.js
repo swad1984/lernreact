@@ -3,27 +3,40 @@
 var w = [
 	{
 		z: 'test z1',
-		x: 'test x1'
+		x: 'test x1',
+		y: 'Full text y1'
 	},
 	{
 		z: 'test z2',
-		x: 'test x2'
+		x: 'test x2',
+		y: 'Full text y2'
 	}
 
 ];
 
 var Appdet = React.createClass(
 	{
+		getInitialState: function () {
+			return {
+				visible: false
+			};
+		},
 		render: function() {
 			var z = this.props.data.z;
 			var x = this.props.data.x;
+			var y = this.props.data.y;
+			console.log(this.state);
 			return (
 				<div>
-					<span>{z}</span>
-					<span>{x}</span>
+					<span>{z}</span><br/>
+					<span>{x}</span><br/>
+					<a href="#" className="readmore">Подробнее..</a><br/>
+					<span>{y}</span>
 				</div>
 			)
 		}
+
+		
 	}
 );
 
