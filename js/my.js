@@ -15,7 +15,8 @@ var w = [
 var App = React.createClass({
   render: function() {
   		//console.log(this.props.data);
-    	var date = this.props.data;
+		var date = this.props.data;
+		
     	var tpl = date.map(function(item, index) {
     		return (
     			<div key={index}>
@@ -23,7 +24,8 @@ var App = React.createClass({
     				<p>{item.x}</p>
     			</div>
     			)
-    	})
+		});
+	console.log(tpl);
     return (
     	<div>
     		{tpl}
@@ -32,21 +34,7 @@ var App = React.createClass({
     
   }
 });
-/* */
-//* */
-/*
-var t = data.map(
-	function (item, index) {
-		return (
-    			<div key={index}>
-    				<p>{item.z}</p>
-    				<p>{item.x}</p>
-    			</div>
-    			)
-	}
-	); */
-/* */
-//* */
+
 var Qwerty = React.createClass({
 		
 		render: function() {
@@ -55,7 +43,7 @@ var Qwerty = React.createClass({
 				);
 		}
 	}); 
-
+console.log(w);
 
 
 ReactDOM.render(
@@ -64,10 +52,10 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-  <App />,
+  <App data={w}/>,
   document.getElementById('first3')
 );
 
-$("#first2").html('Вроде арбайтен');
+$("#first2").html('Вроде арбайтен ppp');
 console.log(React);
 console.log(ReactDOM);
