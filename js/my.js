@@ -25,11 +25,12 @@ var App = React.createClass({
     			</div>
     			)
 		});
-	console.log(tpl);
+	//console.log(tpl);
     return (
-    	<div>
+    	<div className={date.length > 0 ? 'have':'none'}>
     		{tpl}
-    	</div>
+				<div>Элементов в массиве: {date.length}</div>
+    	</div>			
     )
     
   }
@@ -43,7 +44,7 @@ var Qwerty = React.createClass({
 				);
 		}
 	}); 
-console.log(w);
+//console.log(w);
 
 
 ReactDOM.render(
@@ -57,5 +58,5 @@ ReactDOM.render(
 );
 
 $("#first2").html('Вроде арбайтен ppp');
-console.log(React);
-console.log(ReactDOM);
+//console.log(React);
+//console.log(ReactDOM);
